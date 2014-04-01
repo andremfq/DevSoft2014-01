@@ -1,0 +1,22 @@
+André Amaral de Sousa
+
+Classe: Itens
+Atributos: tipo,id,carga_que_pertence
+Métodos: entrar_numa_carga,sair_de_uma_carga
+
+
+Classe: Carga
+Atributos: id,veiculo
+Métodos: entrar_num_veiculo,sair_de_um_veiculo,receber_item,tirar_item
+
+Classe: Veiculo
+Atributos: motorista,carga,id,local
+Métodos: receber_motorista,receber_carga,tirar_carga,andar
+
+Classe: Motorista
+Atributos: nome,id_na_empresa,veiculo
+Métodos: dirigir_veiculo
+
+Classe: Cliente
+Atributos: nome,id_na_empresa
+Métodos: pedir_item,restrear_item,pagar
