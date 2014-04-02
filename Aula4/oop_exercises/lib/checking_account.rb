@@ -10,7 +10,9 @@ class CheckingAccount < BankAccount
   end
 
   def withdraw(amount)
-    @balance -= amount
+    if(@balance-amount+CREDIT_LINE>=0)
+      @balance -= amount
+    end
     log_transaction('Withdrawal', amount)
   end
 
